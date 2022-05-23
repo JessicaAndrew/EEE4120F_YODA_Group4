@@ -14,38 +14,38 @@ To run the pre-processing the image of choice need to be put in the same folder 
 
 Command line statements to run the various codes:
 
-python PicToArray.py
+    python PicToArray.py
 
-python ArrayToPic.py
+    python ArrayToPic.py
 
-g++ edgeDetectionSeq.cpp -o edgeDetectionSeq.out -lOpenCL
+    g++ edgeDetectionSeq.cpp -o edgeDetectionSeq.out -lOpenCL
 
-./edgeDetectionSeq.out
+    ./edgeDetectionSeq.out
 
-g++ EdgeDetection.cpp -o EdgeDetection.out -lOpenCL
+    g++ EdgeDetection.cpp -o EdgeDetection.out -lOpenCL
 
-./EdgeDetection.out
+    ./EdgeDetection.out
 
-g++ medianFilterGoldenStandard.cpp -o medianFilterGoldenStandard.out -lOpenCL
+    g++ medianFilterGoldenStandard.cpp -o medianFilterGoldenStandard.out -lOpenCL
 
-./medianFilterGoldenStandard.out
+    ./medianFilterGoldenStandard.out
 
-g++ medianFilter.cpp -o medianFilter.out -lOpenCL
+    g++ medianFilter.cpp -o medianFilter.out -lOpenCL
 
-./medianFilter.out
+    ./medianFilter.out
 
-python compare.py
+    python compare.py
 
 
 
 Example run order for the OpenCL median filter:
 
-python PicToArray.py
+    python PicToArray.py
 
-g++ medianFilter.cpp -o medianFilter.out -lOpenCL
+    g++ medianFilter.cpp -o medianFilter.out -lOpenCL
 
-./medianFilter.out
+    ./medianFilter.out
 
-python ArrayToPic.py
+    python ArrayToPic.py
 
-python compare.py
+    python compare.py
